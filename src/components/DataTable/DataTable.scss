@@ -1,0 +1,158 @@
+.data-table {
+  background-color: #ffffff;
+  border-radius: 12px;
+  padding: 24px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+
+  .table-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 24px;
+
+    .left-section {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+
+      .title {
+        font-weight: 600;
+        color: #1a1f36;
+        margin-right: 8px;
+      }
+
+      .MuiIconButton-root {
+        color: #6b7280;
+        padding: 8px;
+
+        &:hover {
+          background-color: #f3f4f6;
+        }
+      }
+
+      .search-field {
+        .MuiOutlinedInput-root {
+          border-radius: 8px;
+          background-color: #f8f9fa;
+
+          &:hover {
+            background-color: #f3f4f6;
+          }
+
+          .MuiOutlinedInput-input {
+            padding: 8px 12px 8px 0;
+          }
+        }
+
+        .search-icon {
+          color: #6b7280;
+          margin: 0 8px;
+          font-size: 1.25rem;
+        }
+      }
+    }
+
+    .right-section {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+
+      .MuiIconButton-root {
+        color: #6b7280;
+      }
+
+      .add-button {
+        background-color: #ef4444;
+        text-transform: none;
+        padding: 6px 16px;
+        border-radius: 8px;
+        font-weight: 500;
+
+        &:hover {
+          background-color: #dc2626;
+        }
+      }
+    }
+  }
+
+  .table-container {
+    border-radius: 8px;
+    box-shadow: none;
+
+    .MuiTable-root {
+      .MuiTableHead-root {
+        .MuiTableRow-root {
+          .MuiTableCell-root {
+            background-color: #f8f9fa;
+            color: #6b7280;
+            font-weight: 500;
+            font-size: 0.875rem;
+            border-bottom: 1px solid #e9ecef;
+            padding: 12px 16px;
+
+            &:first-child {
+              border-top-left-radius: 8px;
+            }
+
+            &:last-child {
+              border-top-right-radius: 8px;
+            }
+          }
+        }
+      }
+
+      .MuiTableBody-root {
+        .MuiTableRow-root {
+          &:hover {
+            background-color: #f8f9fa;
+          }
+
+          .MuiTableCell-root {
+            color: #1a1f36;
+            font-size: 0.875rem;
+            border-bottom: 1px solid #e9ecef;
+            padding: 12px 16px;
+
+            .contact-cell {
+              display: flex;
+              align-items: center;
+              gap: 8px;
+
+              .contact-avatar {
+                width: 32px;
+                height: 32px;
+                font-size: 0.875rem;
+              }
+            }
+
+            .source-chip {
+              font-size: 0.75rem;
+              height: 24px;
+              border-radius: 12px;
+
+              &.referrals {
+                background-color: #ecfdf5;
+                color: #059669;
+              }
+
+              &.outreach {
+                background-color: #eff6ff;
+                color: #3b82f6;
+              }
+
+              &.word-of-mouth {
+                background-color: #fef3c7;
+                color: #d97706;
+              }
+
+              &.social-networks {
+                background-color: #f3e8ff;
+                color: #9333ea;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+} 

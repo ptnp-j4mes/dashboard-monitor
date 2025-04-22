@@ -1,0 +1,128 @@
+.projects-page {
+  padding: 24px;
+
+  .projects-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 24px;
+
+    .add-project-btn {
+      background-color: #ef4444;
+      text-transform: none;
+      padding: 8px 16px;
+      border-radius: 8px;
+      font-weight: 500;
+
+      &:hover {
+        background-color: #dc2626;
+      }
+    }
+  }
+
+  .project-card {
+    height: 100%;
+    border-radius: 12px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+
+    .card-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      margin-bottom: 12px;
+
+      .project-name {
+        font-weight: 600;
+        color: #1a1f36;
+      }
+    }
+
+    .description {
+      color: #6b7280;
+      margin-bottom: 16px;
+      line-height: 1.5;
+    }
+
+    .progress-section {
+      margin-bottom: 16px;
+
+      .progress-header {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 8px;
+      }
+
+      .progress-bar {
+        height: 6px;
+        border-radius: 3px;
+
+        &.in-progress {
+          .MuiLinearProgress-bar {
+            background-color: #3b82f6;
+          }
+        }
+
+        &.completed {
+          .MuiLinearProgress-bar {
+            background-color: #059669;
+          }
+        }
+
+        &.on-hold {
+          .MuiLinearProgress-bar {
+            background-color: #f59e0b;
+          }
+        }
+      }
+    }
+
+    .card-footer {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      .status-chip {
+        font-size: 0.75rem;
+        height: 24px;
+
+        &.in-progress {
+          background-color: #eff6ff;
+          color: #3b82f6;
+        }
+
+        &.completed {
+          background-color: #ecfdf5;
+          color: #059669;
+        }
+
+        &.on-hold {
+          background-color: #fef3c7;
+          color: #f59e0b;
+        }
+      }
+
+      .team-avatars {
+        display: flex;
+        align-items: center;
+
+        .avatar {
+          width: 28px;
+          height: 28px;
+          border-radius: 50%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          color: white;
+          font-size: 0.75rem;
+          font-weight: 500;
+          margin-left: -8px;
+          border: 2px solid white;
+
+          &:first-child {
+            margin-left: 0;
+          }
+        }
+      }
+    }
+  }
+} 

@@ -1,0 +1,130 @@
+.analytics-page {
+  padding: 24px;
+
+  .page-title {
+    margin-bottom: 24px;
+    color: #1a1f36;
+    font-weight: 600;
+  }
+
+  .summary-card {
+    border-radius: 12px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+
+    .card-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 16px;
+
+      .icon {
+        width: 40px;
+        height: 40px;
+        border-radius: 8px;
+
+        &.revenue {
+          background-color: #ecfdf5;
+          color: #059669;
+        }
+
+        &.users {
+          background-color: #eff6ff;
+          color: #3b82f6;
+        }
+      }
+    }
+
+    .MuiTypography-h4 {
+      font-weight: 600;
+      color: #1a1f36;
+      margin-bottom: 8px;
+    }
+
+    .trend {
+      display: flex;
+      align-items: center;
+      gap: 4px;
+      font-weight: 500;
+
+      &.positive {
+        color: #059669;
+      }
+
+      &.negative {
+        color: #dc2626;
+      }
+
+      .MuiSvgIcon-root {
+        font-size: 1rem;
+      }
+    }
+  }
+
+  .chart-card {
+    border-radius: 12px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+
+    .MuiCardContent-root {
+      .MuiTypography-h6 {
+        color: #1a1f36;
+        font-weight: 600;
+        margin-bottom: 24px;
+      }
+    }
+
+    .chart-container {
+      position: relative;
+
+      .recharts-cartesian-grid-horizontal line,
+      .recharts-cartesian-grid-vertical line {
+        stroke: #e9ecef;
+      }
+
+      .recharts-tooltip-wrapper {
+        .recharts-default-tooltip {
+          background-color: #fff !important;
+          border: none !important;
+          border-radius: 8px;
+          box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+          padding: 12px;
+
+          .recharts-tooltip-label {
+            color: #6b7280;
+            font-size: 0.75rem;
+            margin-bottom: 4px;
+          }
+
+          .recharts-tooltip-item {
+            color: #1a1f36;
+            font-size: 0.875rem;
+            padding: 4px 0;
+          }
+        }
+      }
+    }
+
+    .chart-legend {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 16px;
+      margin-top: 24px;
+      justify-content: center;
+
+      .legend-item {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+
+        .color-box {
+          width: 12px;
+          height: 12px;
+          border-radius: 3px;
+        }
+
+        .MuiTypography-body2 {
+          color: #6b7280;
+        }
+      }
+    }
+  }
+} 

@@ -1,0 +1,127 @@
+.entity-overview {
+  padding: 24px;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+
+  .entity-header {
+    display: flex;
+    gap: 16px;
+    margin-bottom: 24px;
+
+    .logo-container {
+      width: 48px;
+      height: 48px;
+      border-radius: 12px;
+      overflow: hidden;
+      background-color: #f3f4f6;
+
+      .logo {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+
+    .info {
+      flex: 1;
+
+      .title-row {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        margin-bottom: 8px;
+
+        .name {
+          font-weight: 600;
+          color: #1a1f36;
+          margin: 0;
+        }
+
+        .certified-badge {
+          background-color: #ecfdf5;
+          color: #059669;
+          font-size: 0.75rem;
+          height: 24px;
+
+          .MuiChip-icon {
+            color: #059669;
+            font-size: 1rem;
+          }
+        }
+      }
+
+      .contact-row {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+
+        .contact-avatar {
+          width: 24px;
+          height: 24px;
+          font-size: 0.875rem;
+        }
+
+        .contact-name {
+          color: #1a1f36;
+          font-weight: 500;
+        }
+
+        .last-edited {
+          color: #6b7280;
+          &::before {
+            content: "•";
+            margin: 0 8px;
+          }
+        }
+      }
+    }
+  }
+
+  .metrics {
+    display: flex;
+    gap: 24px;
+
+    .metric-card {
+      flex: 1;
+      padding: 16px;
+      background-color: #f8f9fa;
+      border-radius: 8px;
+
+      .label {
+        color: #6b7280;
+        display: block;
+        margin-bottom: 4px;
+      }
+
+      .value-container {
+        display: flex;
+        align-items: baseline;
+        gap: 4px;
+        margin-bottom: 4px;
+
+        .value {
+          font-weight: 600;
+          color: #1a1f36;
+          margin: 0;
+        }
+
+        .total {
+          color: #6b7280;
+        }
+      }
+
+      .trend {
+        font-weight: 500;
+
+        &.positive {
+          color: #059669;
+        }
+
+        &.negative {
+          color: #dc2626;
+        }
+      }
+    }
+  }
+} 
