@@ -6,7 +6,7 @@ import Header from './components/Header/Header';
 import DashboardPage from './pages/DashboardPage/DashboardPage';
 import ProjectsPage from './pages/ProjectsPage/ProjectsPage';
 import AnalyticsPage from './pages/AnalyticsPage/AnalyticsPage';
-import Report from './pages/Report';
+import ReportPage from './pages/ReportPage/ReportPage';
 import PeoplePage from './pages/PeoplePage';
 import ExtensionsPage from './pages/ExtensionsPage';
 import CompaniesPage from './pages/CompaniesPage';
@@ -92,7 +92,7 @@ const AppContent: React.FC = () => {
           <Route path="/" element={<DashboardPage />} />
           <Route path="/projects" element={<ProjectsPage />} />
           <Route path="/analytics" element={<AnalyticsPage />} />
-          <Route path="/reports" element={<Report />} />
+          <Route path="/reports" element={<ReportPage />} />
           <Route path="/extensions" element={<ExtensionsPage />} />
           <Route path="/companies" element={<CompaniesPage />} />
           <Route path="/people" element={<PeoplePage />} />
